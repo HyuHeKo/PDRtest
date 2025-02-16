@@ -79,6 +79,14 @@ footer{
         display: block;
     }
 }
+@media (min-width: 801px) {
+    #btnnav:disabled {
+        background-color: #94aeba; /* Світло-сірий фон для візуального відображення */
+        color: #798a91; /* Текст теж сіріє */
+        pointer-events: none; /* Відключає взаємодію з кнопкою */
+        cursor: not-allowed; /* Курсор "не дозволено" */
+    }
+}
 
 
 button {
