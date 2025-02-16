@@ -16,6 +16,8 @@ body{
 
 header{
     display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
     top: 0;
     position: sticky;
     grid-area: header;
@@ -25,10 +27,15 @@ header{
     "logo logotext"; */
     justify-content: flex-start;
     align-items: center;
+    height: 161.6px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
 }
 aside{
-    height: calc(100vh - 92px - 2em);
-    top: 92px;
+    height: calc(100vh - 193.6px - 2em);
+    top: 193.6px;
     position: sticky;
     align-self: start;
     grid-area: sidebar;
@@ -48,8 +55,8 @@ footer{
 }
 
 #logoimage{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     margin: 5px;
     /* grid-area: logo; */
 }
@@ -78,6 +85,7 @@ button {
     color: white;
     border: none;
     padding: 12px 24px;
+    margin: 2.5px;
     font-size: 24px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
@@ -86,11 +94,11 @@ button {
 
 button:hover {
     transform: translateY(-3px); /* Піднімає кнопку */
-    background-color: #2980b9; /* Темніший відтінок */
+    background-color: #58818f; /* Темніший відтінок */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Додає тінь */
 }
 
 button:active {
     transform: translateY(1px); /* Легка зміна при натисканні */
-    background-color: #1c6ea4; /* Ще темніший відтінок */
+    background-color: rgb(44, 73, 92); /* Ще темніший відтінок */
 }
