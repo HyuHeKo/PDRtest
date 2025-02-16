@@ -22,7 +22,7 @@ header{
     position: sticky;
     grid-area: header;
     background-color: #8FABB7;
-    padding: 1em;
+    /* padding: 1em; */
     /* grid-template-areas: 
     "logo logotext"; */
     justify-content: flex-start;
@@ -34,8 +34,8 @@ nav {
     flex-direction: column;
 }
 aside{
-    height: calc(100vh - 193.6px - 2em);
-    top: 193.6px;
+    height: calc(100vh - 161.6px - 2em);
+    top: 161.6px;
     position: sticky;
     align-self: start;
     grid-area: sidebar;
@@ -57,7 +57,7 @@ footer{
 #logoimage{
     height: 80px;
     width: 80px;
-    margin: 5px;
+    margin: 0 5px 0 40px;
     /* grid-area: logo; */
 }
 #logotext{
