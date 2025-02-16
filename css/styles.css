@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 body{
     min-height: 100vh;
@@ -14,22 +15,30 @@ body{
 }
 
 header{
+    display: flex;
     top: 0;
     position: sticky;
     grid-area: header;
-    background-color: aquamarine;
+    background-color: #8FABB7;
     padding: 1em;
+    /* grid-template-areas: 
+    "logo logotext"; */
+    justify-content: flex-start;
+    align-items: center;
 }
 aside{
-    height: calc(100vh - 68.8px);
-    top: 68.8px;
+    height: calc(100vh - 92px - 2em);
+    top: 92px;
     position: sticky;
     align-self: start;
     grid-area: sidebar;
-    background-color: rgb(128, 128, 128);
+    background-color: #46656F;
+    padding: 1em;
 }
 main{
     grid-area: main;
+    background-color: #D8DFE5;
+    padding: 2em;
 }
 footer{
     grid-area: footer;
@@ -37,6 +46,18 @@ footer{
     color: white;
     padding: 2em;
 }
+
+#logoimage{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    /* grid-area: logo; */
+}
+#logotext{
+    margin: 0 30px 0 5px;
+    /* grid-area: logotext; */
+}
+
 @media(max-width: 800px){
     body{
         grid-template-columns: 1fr;
@@ -49,4 +70,27 @@ footer{
     .show{
         display: block;
     }
+}
+
+
+button {
+    background-color: #46656F; /* Основний колір */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    /* text-transform: uppercase; */
+}
+
+button:hover {
+    transform: translateY(-3px); /* Піднімає кнопку */
+    background-color: #2980b9; /* Темніший відтінок */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Додає тінь */
+}
+
+button:active {
+    transform: translateY(1px); /* Легка зміна при натисканні */
+    background-color: #1c6ea4; /* Ще темніший відтінок */
 }
