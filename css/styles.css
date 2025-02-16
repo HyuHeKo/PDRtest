@@ -66,7 +66,7 @@ footer{
     /* grid-area: logotext; */
 }
 
-@media(max-width: 20000px){
+@media(max-width: 800px){
     body{
         grid-template-columns: 1fr;
     }
