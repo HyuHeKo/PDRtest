@@ -61,7 +61,7 @@ footer{
     /* grid-area: logo; */
 }
 #logotext{
-    margin: 0 30px 0 5px;
+    margin: 0 15px 0 5px;
     /* grid-area: logotext; */
 }
 
@@ -85,7 +85,7 @@ button {
     color: white;
     border: none;
     padding: 12px 24px;
-    margin: 2.5px;
+    margin: 2.5px 15px 2.5px 0;
     font-size: 24px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
