@@ -78,9 +78,15 @@ footer{
     .show{
         display: block;
     }
+    #btnnav {
+        /* background-color: #94aeba; Світло-сірий фон для візуального відображення */
+        /* color: #798a91; Текст теж сіріє */
+        pointer-events: auto; /* Відключає взаємодію з кнопкою */
+        cursor: pointer; /* Курсор "не дозволено" */
+    }
 }
 @media (min-width: 801px) {
-    #btnnav:disabled {
+    #btnnav {
         background-color: #94aeba; /* Світло-сірий фон для візуального відображення */
         color: #798a91; /* Текст теж сіріє */
         pointer-events: none; /* Відключає взаємодію з кнопкою */
