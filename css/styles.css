@@ -62,11 +62,11 @@ footer{
 }
 #logotext{
     margin: 0 15px 0 5px;
-    width: 115px;
+    width: 110px;
     /* grid-area: logotext; */
 }
 
-@media(max-width: 800px){
+@media(max-width: 20000px){
     body{
         grid-template-columns: 1fr;
     }
