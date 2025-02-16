@@ -62,6 +62,7 @@ footer{
 }
 #logotext{
     margin: 0 15px 0 5px;
+    width: 115px;
     /* grid-area: logotext; */
 }
 
